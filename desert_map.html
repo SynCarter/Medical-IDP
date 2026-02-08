@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5 = L.map(
+                "map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5",
+                {
+                    center: [7.9465, -1.0232],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5cf3cfe4dc4eda4f817c835dae4b93c4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5cf3cfe4dc4eda4f817c835dae4b93c4.addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var circle_253543e7f688876a653d028897cf3ecb = L.circle(
+                [5.1053, -1.2466],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_3f0d155a30eee852e631313007ae4b94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c65c442ac6bbaf53b8b37d855f0f76dc = $(`<div id="html_c65c442ac6bbaf53b8b37d855f0f76dc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Central</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 12</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 7 more</em></li></ul></div></div>`)[0];
+                popup_3f0d155a30eee852e631313007ae4b94.setContent(html_c65c442ac6bbaf53b8b37d855f0f76dc);
+            
+        
+
+        circle_253543e7f688876a653d028897cf3ecb.bindPopup(popup_3f0d155a30eee852e631313007ae4b94)
+        ;
+
+        
+    
+    
+            var marker_234ce3f5efaf0ae11b0b28f4f1e80fbb = L.marker(
+                [5.1053, -1.2466],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_ef25e9f5f62a9f031d5ccbf32aa16ef0 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Central - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_234ce3f5efaf0ae11b0b28f4f1e80fbb.setIcon(div_icon_ef25e9f5f62a9f031d5ccbf32aa16ef0);
+        
+    
+            var circle_c6d0eb7bdaefdadb15e8b27b93327894 = L.circle(
+                [10.5167, -0.3667],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_bfb2ded686cb66e16a453b583cf193e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5675bcc697558ffd5c9424b78033e130 = $(`<div id="html_5675bcc697558ffd5c9424b78033e130" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: North East</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 11</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 6 more</em></li></ul></div></div>`)[0];
+                popup_bfb2ded686cb66e16a453b583cf193e8.setContent(html_5675bcc697558ffd5c9424b78033e130);
+            
+        
+
+        circle_c6d0eb7bdaefdadb15e8b27b93327894.bindPopup(popup_bfb2ded686cb66e16a453b583cf193e8)
+        ;
+
+        
+    
+    
+            var marker_f9804b91eaeb1897c45bcb9d5630051e = L.marker(
+                [10.5167, -0.3667],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_5eed5f25479e18a8cfdbb63c46168862 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            North East - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_f9804b91eaeb1897c45bcb9d5630051e.setIcon(div_icon_5eed5f25479e18a8cfdbb63c46168862);
+        
+    
+            var circle_7741a083b85dcc75b2ea49e3d5e49494 = L.circle(
+                [5.607333333333333, -0.1745],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_65941e6d7d50ca6d6aa1ef24628c8fd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5a1db50645c20dd43d0a6e6ffd03db1 = $(`<div id="html_d5a1db50645c20dd43d0a6e6ffd03db1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Greater Accra</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 8</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 3 more</em></li></ul></div></div>`)[0];
+                popup_65941e6d7d50ca6d6aa1ef24628c8fd0.setContent(html_d5a1db50645c20dd43d0a6e6ffd03db1);
+            
+        
+
+        circle_7741a083b85dcc75b2ea49e3d5e49494.bindPopup(popup_65941e6d7d50ca6d6aa1ef24628c8fd0)
+        ;
+
+        
+    
+    
+            var marker_06011852fb27fe0beb62327414dc7468 = L.marker(
+                [5.607333333333333, -0.1745],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_dbb4eed67243908d7e693946c6f344c9 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Greater Accra - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_06011852fb27fe0beb62327414dc7468.setIcon(div_icon_dbb4eed67243908d7e693946c6f344c9);
+        
+    
+            var circle_7ba8587bfba22808e8fdbbdf0da719e5 = L.circle(
+                [6.27675, 0.2793],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_6585f39ee2496a658fef453cfaea8594 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccbf6ff56bca9f76fefd5315345a45c5 = $(`<div id="html_ccbf6ff56bca9f76fefd5315345a45c5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Volta</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 11</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 6 more</em></li></ul></div></div>`)[0];
+                popup_6585f39ee2496a658fef453cfaea8594.setContent(html_ccbf6ff56bca9f76fefd5315345a45c5);
+            
+        
+
+        circle_7ba8587bfba22808e8fdbbdf0da719e5.bindPopup(popup_6585f39ee2496a658fef453cfaea8594)
+        ;
+
+        
+    
+    
+            var marker_b177105debd8e706bc6299b640eb8147 = L.marker(
+                [6.27675, 0.2793],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_bf7887fd7b5ac66b80734cb1f9d124ae = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Volta - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_b177105debd8e706bc6299b640eb8147.setIcon(div_icon_bf7887fd7b5ac66b80734cb1f9d124ae);
+        
+    
+            var circle_29e3aa2d4032f1bee1957ffc9e374188 = L.circle(
+                [8.0548, -1.731],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_59abe0ce4c399d928fb29fcb46814d55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2990f4fa3768acad61a7782eb9f7a8e0 = $(`<div id="html_2990f4fa3768acad61a7782eb9f7a8e0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Bono East</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 11</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 6 more</em></li></ul></div></div>`)[0];
+                popup_59abe0ce4c399d928fb29fcb46814d55.setContent(html_2990f4fa3768acad61a7782eb9f7a8e0);
+            
+        
+
+        circle_29e3aa2d4032f1bee1957ffc9e374188.bindPopup(popup_59abe0ce4c399d928fb29fcb46814d55)
+        ;
+
+        
+    
+    
+            var marker_2a696445d5fccc96b2e9d5a1d7840052 = L.marker(
+                [8.0548, -1.731],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_9ea51aebd80cb122207c621bcd42ca40 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Bono East - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_2a696445d5fccc96b2e9d5a1d7840052.setIcon(div_icon_9ea51aebd80cb122207c621bcd42ca40);
+        
+    
+            var circle_5d6134060d23ae3506f72c95a980345f = L.circle(
+                [11.0598, -0.2465],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_ccf68064cfb00a1d2b0025bb6a7d488c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a162c8a444b7e160cea98811f234a43d = $(`<div id="html_a162c8a444b7e160cea98811f234a43d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Upper East</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 13</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: wound care</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: cesarean section</li><li><em>...and 8 more</em></li></ul></div></div>`)[0];
+                popup_ccf68064cfb00a1d2b0025bb6a7d488c.setContent(html_a162c8a444b7e160cea98811f234a43d);
+            
+        
+
+        circle_5d6134060d23ae3506f72c95a980345f.bindPopup(popup_ccf68064cfb00a1d2b0025bb6a7d488c)
+        ;
+
+        
+    
+    
+            var marker_8cf7f2c9ee84bf2f83f9a98006566c9c = L.marker(
+                [11.0598, -0.2465],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_5dfa742f96f25ac89bcc56595c429678 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Upper East - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_8cf7f2c9ee84bf2f83f9a98006566c9c.setIcon(div_icon_5dfa742f96f25ac89bcc56595c429678);
+        
+    
+            var circle_7cc8ac849554b45da3202aab21d3c97b = L.circle(
+                [4.9333, -1.7667],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_e7c34eef95d02cc7f39062089e20d0e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08f22d35f13c6a55db74ec32dd3521db = $(`<div id="html_08f22d35f13c6a55db74ec32dd3521db" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Western</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 11</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 6 more</em></li></ul></div></div>`)[0];
+                popup_e7c34eef95d02cc7f39062089e20d0e3.setContent(html_08f22d35f13c6a55db74ec32dd3521db);
+            
+        
+
+        circle_7cc8ac849554b45da3202aab21d3c97b.bindPopup(popup_e7c34eef95d02cc7f39062089e20d0e3)
+        ;
+
+        
+    
+    
+            var marker_2f33cdb26e89a9cd669c6487d89d1496 = L.marker(
+                [4.9333, -1.7667],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_cb7968bd882b57ed0fb03122bf7426ec = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Western - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_2f33cdb26e89a9cd669c6487d89d1496.setIcon(div_icon_cb7968bd882b57ed0fb03122bf7426ec);
+        
+    
+            var circle_315caea91c19b8c283c41a3185a4c586 = L.circle(
+                [9.4034, -0.8424],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_29dea4681893e4d7d3c40c7f5ab0e81e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb601e17dc628c4148596fa7dd7fb1f8 = $(`<div id="html_bb601e17dc628c4148596fa7dd7fb1f8" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Northern</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 13</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 8 more</em></li></ul></div></div>`)[0];
+                popup_29dea4681893e4d7d3c40c7f5ab0e81e.setContent(html_bb601e17dc628c4148596fa7dd7fb1f8);
+            
+        
+
+        circle_315caea91c19b8c283c41a3185a4c586.bindPopup(popup_29dea4681893e4d7d3c40c7f5ab0e81e)
+        ;
+
+        
+    
+    
+            var marker_8c560f569172dd80f75add09de590c84 = L.marker(
+                [9.4034, -0.8424],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_13b08e6a3b09d9f46ec03c76f5a33a2e = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Northern - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_8c560f569172dd80f75add09de590c84.setIcon(div_icon_13b08e6a3b09d9f46ec03c76f5a33a2e);
+        
+    
+            var circle_3da60c08d86aceaa0064e034c943de2c = L.circle(
+                [6.6965, -1.61785],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_123be4be4171b35766d462bbac06d8fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01a9c61553493e944bb93f02f726bdf2 = $(`<div id="html_01a9c61553493e944bb93f02f726bdf2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Ashanti</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 11</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 6 more</em></li></ul></div></div>`)[0];
+                popup_123be4be4171b35766d462bbac06d8fe.setContent(html_01a9c61553493e944bb93f02f726bdf2);
+            
+        
+
+        circle_3da60c08d86aceaa0064e034c943de2c.bindPopup(popup_123be4be4171b35766d462bbac06d8fe)
+        ;
+
+        
+    
+    
+            var marker_5afd1113c6d92398889b785a118447b9 = L.marker(
+                [6.6965, -1.61785],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_c95d248fbe94660799fff4be91dd7056 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Ashanti - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_5afd1113c6d92398889b785a118447b9.setIcon(div_icon_c95d248fbe94660799fff4be91dd7056);
+        
+    
+            var circle_9a652b0d75a62783c31050adb12c4d07 = L.circle(
+                [7.3397, -2.3295],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_6162bfff61f0721e4bdefabe55d89fe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa8e8d299141c64d64e30d65cb975a9f = $(`<div id="html_aa8e8d299141c64d64e30d65cb975a9f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Bono</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 11</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 6 more</em></li></ul></div></div>`)[0];
+                popup_6162bfff61f0721e4bdefabe55d89fe0.setContent(html_aa8e8d299141c64d64e30d65cb975a9f);
+            
+        
+
+        circle_9a652b0d75a62783c31050adb12c4d07.bindPopup(popup_6162bfff61f0721e4bdefabe55d89fe0)
+        ;
+
+        
+    
+    
+            var marker_49c64c1f1b1ce876c6d1b1abc5ee50ea = L.marker(
+                [7.3397, -2.3295],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_ae0c660277297c62706b95d2f5b90955 = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Bono - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_49c64c1f1b1ce876c6d1b1abc5ee50ea.setIcon(div_icon_ae0c660277297c62706b95d2f5b90955);
+        
+    
+            var circle_6c4cf29aee09de20fc9304727566b253 = L.circle(
+                [10.0601, -2.5095],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_a73e55356a9647fe223f4865a50704a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71635bd5f8b2ebf0f678777508b0e7f1 = $(`<div id="html_71635bd5f8b2ebf0f678777508b0e7f1" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Upper West</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 11</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 6 more</em></li></ul></div></div>`)[0];
+                popup_a73e55356a9647fe223f4865a50704a0.setContent(html_71635bd5f8b2ebf0f678777508b0e7f1);
+            
+        
+
+        circle_6c4cf29aee09de20fc9304727566b253.bindPopup(popup_a73e55356a9647fe223f4865a50704a0)
+        ;
+
+        
+    
+    
+            var marker_9e92179638f25b2836a5fa936113edf9 = L.marker(
+                [10.0601, -2.5095],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_51eaf02fbd0f39f45a5a88248311cadf = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Upper West - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_9e92179638f25b2836a5fa936113edf9.setIcon(div_icon_51eaf02fbd0f39f45a5a88248311cadf);
+        
+    
+            var circle_cfbaf614c3ccfbd37ec0f9d5843b8000 = L.circle(
+                [5.8694500000000005, -0.6678499999999999],
+                {"bubblingMouseEvents": true, "color": "#c0392b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0392b", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000, "stroke": true, "weight": 2}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+        var popup_bdb4b3cea894bce6e94ecc8b6217723c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb26ec9c74728acb88677eddb71a741a = $(`<div id="html_eb26ec9c74728acb88677eddb71a741a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 200px;">             <h4 style="margin: 0 0 10px 0; color: #c0392b;">Medical Desert: Eastern</h4>             <p style="margin: 5px 0;"><strong>Severity:</strong> CRITICAL</p>             <p style="margin: 5px 0;"><strong>Missing Capabilities:</strong> 11</p>         <ul style='margin: 5px 0; padding-left: 20px;'><li>procedure: normal delivery</li><li>procedure: basic surgery</li><li>procedure: emergency care</li><li>procedure: wound care</li><li>procedure: cesarean section</li><li><em>...and 6 more</em></li></ul></div></div>`)[0];
+                popup_bdb4b3cea894bce6e94ecc8b6217723c.setContent(html_eb26ec9c74728acb88677eddb71a741a);
+            
+        
+
+        circle_cfbaf614c3ccfbd37ec0f9d5843b8000.bindPopup(popup_bdb4b3cea894bce6e94ecc8b6217723c)
+        ;
+
+        
+    
+    
+            var marker_dd381985b53bc370ef3c2fa28e089196 = L.marker(
+                [5.8694500000000005, -0.6678499999999999],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var div_icon_c6e14827f69b4990e765bea91006ab3e = L.divIcon({"className": "empty", "html": "\n                        \u003cdiv style=\"\n                            background-color: #c0392b;\n                            color: white;\n                            padding: 5px 10px;\n                            border-radius: 3px;\n                            font-weight: bold;\n                            font-size: 12px;\n                            white-space: nowrap;\n                        \"\u003e\n                            Eastern - CRITICAL\n                        \u003c/div\u003e\n                    "});
+            marker_dd381985b53bc370ef3c2fa28e089196.setIcon(div_icon_c6e14827f69b4990e765bea91006ab3e);
+        
+    
+            var marker_5360c871884f79e2be34b5f520139feb = L.marker(
+                [5.5387, -0.227],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_8f08e1632ea0fa5c0b44f995ab5f500d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5360c871884f79e2be34b5f520139feb.setIcon(icon_8f08e1632ea0fa5c0b44f995ab5f500d);
+        
+    
+        var popup_e9cede76271e21f456b9dbae70f376d0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3f08fda4af1f14ad86e353ece2120e63 = $(`<div id="html_3f08fda4af1f14ad86e353ece2120e63" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Korle Bu Teaching Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Greater Accra</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Good (63/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Valve Replacement</li><li>Neurosurgery</li><li>Bypass</li><li><em>...and 3 more</em></li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Catheterization Lab</li><li>Mammography</li><li><em>...and 4 more</em></li></ul><p style='margin: 10px 0 5px 0; color: #e74c3c;'><strong>⚠️ Issues:</strong></p><ul style='margin: 0; padding-left: 20px;'><li style='color: #e74c3c;'>Claims cardiac surgery but no cardiology specialty listed</li></ul></div></div>`)[0];
+                popup_e9cede76271e21f456b9dbae70f376d0.setContent(html_3f08fda4af1f14ad86e353ece2120e63);
+            
+        
+
+        marker_5360c871884f79e2be34b5f520139feb.bindPopup(popup_e9cede76271e21f456b9dbae70f376d0)
+        ;
+
+        
+    
+    
+            marker_5360c871884f79e2be34b5f520139feb.bindTooltip(
+                `<div>
+                     Korle Bu Teaching Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94b25d9a516bf87cb3cbe59c2596200c = L.marker(
+                [9.4034, -0.8424],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_a10fbe8e3d695b8f803ee9fe60898fd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_94b25d9a516bf87cb3cbe59c2596200c.setIcon(icon_a10fbe8e3d695b8f803ee9fe60898fd5);
+        
+    
+        var popup_c6989a0bd77d076cafb5e1131958a3c6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_213d5e1f33105f561715544da3710a42 = $(`<div id="html_213d5e1f33105f561715544da3710a42" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Tamale Teaching Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Northern</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Moderate (42/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cesarean</li><li>Fracture Management</li><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ventilator (×1)</li></ul><p style='margin: 10px 0 5px 0; color: #e74c3c;'><strong>⚠️ Issues:</strong></p><ul style='margin: 0; padding-left: 20px;'><li style='color: #e74c3c;'>Non-functional equipment: Ultrasound, X-Ray</li></ul></div></div>`)[0];
+                popup_c6989a0bd77d076cafb5e1131958a3c6.setContent(html_213d5e1f33105f561715544da3710a42);
+            
+        
+
+        marker_94b25d9a516bf87cb3cbe59c2596200c.bindPopup(popup_c6989a0bd77d076cafb5e1131958a3c6)
+        ;
+
+        
+    
+    
+            marker_94b25d9a516bf87cb3cbe59c2596200c.bindTooltip(
+                `<div>
+                     Tamale Teaching Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8208bb458286b1c21e49587340cdecad = L.marker(
+                [6.6885, -1.6244],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_22ce9723320e001ae08057d934637635 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8208bb458286b1c21e49587340cdecad.setIcon(icon_22ce9723320e001ae08057d934637635);
+        
+    
+        var popup_5c939473a0f352bf4d0e3db283a5e953 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_62acec27151a155be2d355baf488b716 = $(`<div id="html_62acec27151a155be2d355baf488b716" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">St. Michael's Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Ashanti</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Moderate (51/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Hernia Repair</li><li>Laparoscopic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Ultrasound</li><li>Operating Theater (×2)</li><li><em>...and 4 more</em></li></ul></div></div>`)[0];
+                popup_5c939473a0f352bf4d0e3db283a5e953.setContent(html_62acec27151a155be2d355baf488b716);
+            
+        
+
+        marker_8208bb458286b1c21e49587340cdecad.bindPopup(popup_5c939473a0f352bf4d0e3db283a5e953)
+        ;
+
+        
+    
+    
+            marker_8208bb458286b1c21e49587340cdecad.bindTooltip(
+                `<div>
+                     St. Michael's Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5aeeea3b0963d669e1353d78d93325e = L.marker(
+                [5.5893, -0.1958],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_76ee256dcd43ba4969d0bb2c14deeb1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d5aeeea3b0963d669e1353d78d93325e.setIcon(icon_76ee256dcd43ba4969d0bb2c14deeb1b);
+        
+    
+        var popup_cfd552312da278af5f38f827f7bbea40 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c4af914fbce81f2a537fa9a4956146fd = $(`<div id="html_c4af914fbce81f2a537fa9a4956146fd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Ridge Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Greater Accra</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Critical (19/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cardiac Surgery</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ultrasound (×2)</li><li>X-Ray</li></ul><p style='margin: 10px 0 5px 0; color: #e74c3c;'><strong>⚠️ Issues:</strong></p><ul style='margin: 0; padding-left: 20px;'><li style='color: #e74c3c;'>Claims cardiac surgery but missing: icu</li><li style='color: #e74c3c;'>Unverified claims: Ct Scanner</li></ul></div></div>`)[0];
+                popup_cfd552312da278af5f38f827f7bbea40.setContent(html_c4af914fbce81f2a537fa9a4956146fd);
+            
+        
+
+        marker_d5aeeea3b0963d669e1353d78d93325e.bindPopup(popup_cfd552312da278af5f38f827f7bbea40)
+        ;
+
+        
+    
+    
+            marker_d5aeeea3b0963d669e1353d78d93325e.bindTooltip(
+                `<div>
+                     Ridge Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_111f704f01a459ffdb1fe0b0f9b7f855 = L.marker(
+                [6.6007, 0.471],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_fb05c38731298665da600f61d7981440 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_111f704f01a459ffdb1fe0b0f9b7f855.setIcon(icon_fb05c38731298665da600f61d7981440);
+        
+    
+        var popup_784eeea576dc2fa0aac85934417ae636 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8e9a58374dc671cd3dd4b4683667ee02 = $(`<div id="html_8e9a58374dc671cd3dd4b4683667ee02" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Volta Regional Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Volta</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Limited (39/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cesarean</li><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ultrasound</li><li>Blood Bank</li><li>X-Ray</li></ul></div></div>`)[0];
+                popup_784eeea576dc2fa0aac85934417ae636.setContent(html_8e9a58374dc671cd3dd4b4683667ee02);
+            
+        
+
+        marker_111f704f01a459ffdb1fe0b0f9b7f855.bindPopup(popup_784eeea576dc2fa0aac85934417ae636)
+        ;
+
+        
+    
+    
+            marker_111f704f01a459ffdb1fe0b0f9b7f855.bindTooltip(
+                `<div>
+                     Volta Regional Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08c29d185a883931cb35c153b99def89 = L.marker(
+                [11.0598, -0.2465],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_a236eefc4be36ee18116239a37fb8528 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_08c29d185a883931cb35c153b99def89.setIcon(icon_a236eefc4be36ee18116239a37fb8528);
+        
+    
+        var popup_7c131eb595a5a4a1d55abdbb9f515ed6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b91264ef62909204df82194a31586efc = $(`<div id="html_b91264ef62909204df82194a31586efc" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Community Clinic - Bawku</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Upper East</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Critical (0/100)</p>         </div></div>`)[0];
+                popup_7c131eb595a5a4a1d55abdbb9f515ed6.setContent(html_b91264ef62909204df82194a31586efc);
+            
+        
+
+        marker_08c29d185a883931cb35c153b99def89.bindPopup(popup_7c131eb595a5a4a1d55abdbb9f515ed6)
+        ;
+
+        
+    
+    
+            marker_08c29d185a883931cb35c153b99def89.bindTooltip(
+                `<div>
+                     Community Clinic - Bawku
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1dde1b91bb61ee83d954c3f437a69912 = L.marker(
+                [5.1053, -1.2466],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_15b312ceee7e52985286c03f6a69f18b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1dde1b91bb61ee83d954c3f437a69912.setIcon(icon_15b312ceee7e52985286c03f6a69f18b);
+        
+    
+        var popup_e8309eff6aecc67970b4d88cfc1b9164 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0cfcab1c9159f7e2a947c3a8f02e16b7 = $(`<div id="html_0cfcab1c9159f7e2a947c3a8f02e16b7" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Cape Coast Teaching Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Central</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Limited (31/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Neurosurgery</li><li>Laparoscopic</li><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0; color: #e74c3c;'><strong>⚠️ Issues:</strong></p><ul style='margin: 0; padding-left: 20px;'><li style='color: #e74c3c;'>Non-functional equipment: ICU, Ultrasound, MRI, Operating Theater, Ct Scanner, X-Ray</li></ul></div></div>`)[0];
+                popup_e8309eff6aecc67970b4d88cfc1b9164.setContent(html_0cfcab1c9159f7e2a947c3a8f02e16b7);
+            
+        
+
+        marker_1dde1b91bb61ee83d954c3f437a69912.bindPopup(popup_e8309eff6aecc67970b4d88cfc1b9164)
+        ;
+
+        
+    
+    
+            marker_1dde1b91bb61ee83d954c3f437a69912.bindTooltip(
+                `<div>
+                     Cape Coast Teaching Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcf0b055d0ccc4866fe36d932173ad1c = L.marker(
+                [10.0601, -2.5095],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_ece9a41ac475b112b7749d30795fc9c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fcf0b055d0ccc4866fe36d932173ad1c.setIcon(icon_ece9a41ac475b112b7749d30795fc9c7);
+        
+    
+        var popup_4c4c3f4511366a6f097f62223bc751af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d845a04d5f82c9923e3f773db0e9f9d2 = $(`<div id="html_d845a04d5f82c9923e3f773db0e9f9d2" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Upper West Regional Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Upper West</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Moderate (41/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cesarean</li><li>Hernia Repair</li><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ultrasound</li><li>X-Ray</li></ul></div></div>`)[0];
+                popup_4c4c3f4511366a6f097f62223bc751af.setContent(html_d845a04d5f82c9923e3f773db0e9f9d2);
+            
+        
+
+        marker_fcf0b055d0ccc4866fe36d932173ad1c.bindPopup(popup_4c4c3f4511366a6f097f62223bc751af)
+        ;
+
+        
+    
+    
+            marker_fcf0b055d0ccc4866fe36d932173ad1c.bindTooltip(
+                `<div>
+                     Upper West Regional Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29282a166b079f424a7a4f24c78a1c60 = L.marker(
+                [7.3397, -2.3295],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_debac1e5f114ccaa1f26ecc321b57041 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_29282a166b079f424a7a4f24c78a1c60.setIcon(icon_debac1e5f114ccaa1f26ecc321b57041);
+        
+    
+        var popup_c81abaf7da356f518c6e0cb6f92ed3e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b3a50e5f8a9f7d9b257f9d7084408a69 = $(`<div id="html_b3a50e5f8a9f7d9b257f9d7084408a69" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Sunyani Regional Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Bono</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Moderate (44/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Ultrasound (×2)</li><li>Blood Bank</li><li><em>...and 2 more</em></li></ul></div></div>`)[0];
+                popup_c81abaf7da356f518c6e0cb6f92ed3e0.setContent(html_b3a50e5f8a9f7d9b257f9d7084408a69);
+            
+        
+
+        marker_29282a166b079f424a7a4f24c78a1c60.bindPopup(popup_c81abaf7da356f518c6e0cb6f92ed3e0)
+        ;
+
+        
+    
+    
+            marker_29282a166b079f424a7a4f24c78a1c60.bindTooltip(
+                `<div>
+                     Sunyani Regional Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8aa1da7b98b2f8b2af2c82f25fa976c0 = L.marker(
+                [5.6037, -0.187],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_89e7981a7c228d24077ed7cce78a15d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8aa1da7b98b2f8b2af2c82f25fa976c0.setIcon(icon_89e7981a7c228d24077ed7cce78a15d8);
+        
+    
+        var popup_b652e34670433bd7ff1e0b818009f9a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6d58673e8897f993665a4ebf97301834 = $(`<div id="html_6d58673e8897f993665a4ebf97301834" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Military Hospital - Accra</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Greater Accra</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Limited (35/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Trauma Surgery</li><li>Joint Replacement</li><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Ultrasound (×3)</li><li>Ct Scanner</li><li><em>...and 1 more</em></li></ul></div></div>`)[0];
+                popup_b652e34670433bd7ff1e0b818009f9a1.setContent(html_6d58673e8897f993665a4ebf97301834);
+            
+        
+
+        marker_8aa1da7b98b2f8b2af2c82f25fa976c0.bindPopup(popup_b652e34670433bd7ff1e0b818009f9a1)
+        ;
+
+        
+    
+    
+            marker_8aa1da7b98b2f8b2af2c82f25fa976c0.bindTooltip(
+                `<div>
+                     Military Hospital - Accra
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b919398c2cddea08678bac0cadde6b3d = L.marker(
+                [5.6331, -0.0648],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_6aad412fb8cb886626b1a428ab8512ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b919398c2cddea08678bac0cadde6b3d.setIcon(icon_6aad412fb8cb886626b1a428ab8512ee);
+        
+    
+        var popup_e5a8cd64e999ea5386a3a7ee4bc16ed3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ed606370d8215cfaecb9de67b8d2533 = $(`<div id="html_8ed606370d8215cfaecb9de67b8d2533" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">LEKMA Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Greater Accra</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Critical (6/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ultrasound (×1)</li><li>Operating Theater</li></ul></div></div>`)[0];
+                popup_e5a8cd64e999ea5386a3a7ee4bc16ed3.setContent(html_8ed606370d8215cfaecb9de67b8d2533);
+            
+        
+
+        marker_b919398c2cddea08678bac0cadde6b3d.bindPopup(popup_e5a8cd64e999ea5386a3a7ee4bc16ed3)
+        ;
+
+        
+    
+    
+            marker_b919398c2cddea08678bac0cadde6b3d.bindTooltip(
+                `<div>
+                     LEKMA Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b1bb22a7a290310c70ffbe3e828f5a7 = L.marker(
+                [5.9528, 0.0876],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_27c53525f224e4a0b9a086d5d6cffbf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2b1bb22a7a290310c70ffbe3e828f5a7.setIcon(icon_27c53525f224e4a0b9a086d5d6cffbf1);
+        
+    
+        var popup_5a6bc896fef42e083b15cf7705375fda = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1de1a1c970e45f4219b90fdb4f486370 = $(`<div id="html_1de1a1c970e45f4219b90fdb4f486370" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Catholic Hospital - Battor</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Volta</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Limited (31/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Hernia Repair</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ultrasound</li><li>X-Ray</li></ul></div></div>`)[0];
+                popup_5a6bc896fef42e083b15cf7705375fda.setContent(html_1de1a1c970e45f4219b90fdb4f486370);
+            
+        
+
+        marker_2b1bb22a7a290310c70ffbe3e828f5a7.bindPopup(popup_5a6bc896fef42e083b15cf7705375fda)
+        ;
+
+        
+    
+    
+            marker_2b1bb22a7a290310c70ffbe3e828f5a7.bindTooltip(
+                `<div>
+                     Catholic Hospital - Battor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72c4ea7f8daf74c49e8329f13f08c80f = L.marker(
+                [5.6789, -0.2891],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_c601b31df5e6f8d5d8ae96f0b43eb322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_72c4ea7f8daf74c49e8329f13f08c80f.setIcon(icon_c601b31df5e6f8d5d8ae96f0b43eb322);
+        
+    
+        var popup_b2f5d7f18a3f3d14d92743f72d05f454 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5e1e86258f721acccc99fbb7a8051c66 = $(`<div id="html_5e1e86258f721acccc99fbb7a8051c66" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Ga West Municipal Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Greater Accra</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Critical (9/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cesarean</li></ul><p style='margin: 10px 0 5px 0; color: #e74c3c;'><strong>⚠️ Issues:</strong></p><ul style='margin: 0; padding-left: 20px;'><li style='color: #e74c3c;'>Non-functional equipment: Ultrasound, X-Ray</li></ul></div></div>`)[0];
+                popup_b2f5d7f18a3f3d14d92743f72d05f454.setContent(html_5e1e86258f721acccc99fbb7a8051c66);
+            
+        
+
+        marker_72c4ea7f8daf74c49e8329f13f08c80f.bindPopup(popup_b2f5d7f18a3f3d14d92743f72d05f454)
+        ;
+
+        
+    
+    
+            marker_72c4ea7f8daf74c49e8329f13f08c80f.bindTooltip(
+                `<div>
+                     Ga West Municipal Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99d9090c7276532b1f5fecfc5692a9b3 = L.marker(
+                [6.7045, -1.6113],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_360027e6831c6e0e71d8b484c122bf27 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_99d9090c7276532b1f5fecfc5692a9b3.setIcon(icon_360027e6831c6e0e71d8b484c122bf27);
+        
+    
+        var popup_341cd60508802b72d93106d2af69144e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_34feb8a8d09bc0a2ea931243dfa3d813 = $(`<div id="html_34feb8a8d09bc0a2ea931243dfa3d813" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Manhyia District Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Ashanti</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Critical (7/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ultrasound</li></ul></div></div>`)[0];
+                popup_341cd60508802b72d93106d2af69144e.setContent(html_34feb8a8d09bc0a2ea931243dfa3d813);
+            
+        
+
+        marker_99d9090c7276532b1f5fecfc5692a9b3.bindPopup(popup_341cd60508802b72d93106d2af69144e)
+        ;
+
+        
+    
+    
+            marker_99d9090c7276532b1f5fecfc5692a9b3.bindTooltip(
+                `<div>
+                     Manhyia District Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32111be834530cf43970dbce33f94c67 = L.marker(
+                [4.9333, -1.7667],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_0a81a47d852311613a2fd616383aadb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_32111be834530cf43970dbce33f94c67.setIcon(icon_0a81a47d852311613a2fd616383aadb7);
+        
+    
+        var popup_e46d90a8f00aec0d8446ac07925e974b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a7cb6cf4e891428e6247df255fa07968 = $(`<div id="html_a7cb6cf4e891428e6247df255fa07968" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Western Regional Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Western</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Moderate (53/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cesarean</li><li>Hernia Repair</li><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Ultrasound (×3)</li><li>Blood Bank</li><li><em>...and 3 more</em></li></ul></div></div>`)[0];
+                popup_e46d90a8f00aec0d8446ac07925e974b.setContent(html_a7cb6cf4e891428e6247df255fa07968);
+            
+        
+
+        marker_32111be834530cf43970dbce33f94c67.bindPopup(popup_e46d90a8f00aec0d8446ac07925e974b)
+        ;
+
+        
+    
+    
+            marker_32111be834530cf43970dbce33f94c67.bindTooltip(
+                `<div>
+                     Western Regional Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33c70b52fff045680addef540000876c = L.marker(
+                [5.8082, -0.3524],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_65f99177a08824576f8717aa33af6fa7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_33c70b52fff045680addef540000876c.setIcon(icon_65f99177a08824576f8717aa33af6fa7);
+        
+    
+        var popup_b25753b84f38ee4cd49f8c81643d07b1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fa88f764b2d43b86b0d8f295560a6346 = $(`<div id="html_fa88f764b2d43b86b0d8f295560a6346" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Nsawam Government Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Eastern</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Limited (25/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cesarean</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Ultrasound</li><li>Ventilator</li><li><em>...and 1 more</em></li></ul></div></div>`)[0];
+                popup_b25753b84f38ee4cd49f8c81643d07b1.setContent(html_fa88f764b2d43b86b0d8f295560a6346);
+            
+        
+
+        marker_33c70b52fff045680addef540000876c.bindPopup(popup_b25753b84f38ee4cd49f8c81643d07b1)
+        ;
+
+        
+    
+    
+            marker_33c70b52fff045680addef540000876c.bindTooltip(
+                `<div>
+                     Nsawam Government Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ea898ebf3152508b2caa4b29bde9cba = L.marker(
+                [8.0548, -1.731],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_66dd21c7e195262f621b6b2c66876e9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5ea898ebf3152508b2caa4b29bde9cba.setIcon(icon_66dd21c7e195262f621b6b2c66876e9d);
+        
+    
+        var popup_af9114c0c568b115a2ed267ad580a234 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a3087ff77c45a35056334c34494c592e = $(`<div id="html_a3087ff77c45a35056334c34494c592e" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Kintampo Municipal Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Bono East</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Limited (30/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ultrasound</li><li>Blood Bank</li><li>X-Ray</li></ul></div></div>`)[0];
+                popup_af9114c0c568b115a2ed267ad580a234.setContent(html_a3087ff77c45a35056334c34494c592e);
+            
+        
+
+        marker_5ea898ebf3152508b2caa4b29bde9cba.bindPopup(popup_af9114c0c568b115a2ed267ad580a234)
+        ;
+
+        
+    
+    
+            marker_5ea898ebf3152508b2caa4b29bde9cba.bindTooltip(
+                `<div>
+                     Kintampo Municipal Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43cbdeb9ddb500d969db9a6ec20b2f6d = L.marker(
+                [5.9307, -0.9833],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_a45591a29be71c41c2bde376f8a20b71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_43cbdeb9ddb500d969db9a6ec20b2f6d.setIcon(icon_a45591a29be71c41c2bde376f8a20b71);
+        
+    
+        var popup_55089e9e9ae2c8f95fd717134573ef45 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_91c8b0653d51ceb2f8559d01d119f633 = $(`<div id="html_91c8b0653d51ceb2f8559d01d119f633" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Akim Oda Government Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Eastern</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Critical (12/100)</p>         <p style='margin: 10px 0 5px 0; color: #e74c3c;'><strong>⚠️ Issues:</strong></p><ul style='margin: 0; padding-left: 20px;'><li style='color: #e74c3c;'>Non-functional equipment: Ultrasound, X-Ray</li></ul></div></div>`)[0];
+                popup_55089e9e9ae2c8f95fd717134573ef45.setContent(html_91c8b0653d51ceb2f8559d01d119f633);
+            
+        
+
+        marker_43cbdeb9ddb500d969db9a6ec20b2f6d.bindPopup(popup_55089e9e9ae2c8f95fd717134573ef45)
+        ;
+
+        
+    
+    
+            marker_43cbdeb9ddb500d969db9a6ec20b2f6d.bindTooltip(
+                `<div>
+                     Akim Oda Government Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c654c102aa45119881657d1aa095d1f = L.marker(
+                [5.6003, -0.0833],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_dab05c8f2474553c442e71d7d1b84025 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6c654c102aa45119881657d1aa095d1f.setIcon(icon_dab05c8f2474553c442e71d7d1b84025);
+        
+    
+        var popup_c3942ab2c54c152f3ad9de3bd0472818 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9aa63cfb48b3d297c7df083de8495b3f = $(`<div id="html_9aa63cfb48b3d297c7df083de8495b3f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Holy Family Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Greater Accra</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Limited (32/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Laparoscopic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Ultrasound (×4)</li><li>Operating Theater</li><li><em>...and 2 more</em></li></ul></div></div>`)[0];
+                popup_c3942ab2c54c152f3ad9de3bd0472818.setContent(html_9aa63cfb48b3d297c7df083de8495b3f);
+            
+        
+
+        marker_6c654c102aa45119881657d1aa095d1f.bindPopup(popup_c3942ab2c54c152f3ad9de3bd0472818)
+        ;
+
+        
+    
+    
+            marker_6c654c102aa45119881657d1aa095d1f.bindTooltip(
+                `<div>
+                     Holy Family Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff72dc9051dcb38354799f593784e05b = L.marker(
+                [10.5167, -0.3667],
+                {}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+    
+            var icon_7be03fdb64010222617912353549ba41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ff72dc9051dcb38354799f593784e05b.setIcon(icon_7be03fdb64010222617912353549ba41);
+        
+    
+        var popup_b304a74255c16eb6d5ae106c03f587ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e73c45822356c6ea8ff3b79dc10f627a = $(`<div id="html_e73c45822356c6ea8ff3b79dc10f627a" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Nalerigu Baptist Medical Centre</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Unknown</p>             <p style="margin: 5px 0;"><strong>Region:</strong> North East</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Moderate (46/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cesarean</li><li>Orthopedic</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Ultrasound</li><li>Blood Bank</li><li><em>...and 1 more</em></li></ul></div></div>`)[0];
+                popup_b304a74255c16eb6d5ae106c03f587ca.setContent(html_e73c45822356c6ea8ff3b79dc10f627a);
+            
+        
+
+        marker_ff72dc9051dcb38354799f593784e05b.bindPopup(popup_b304a74255c16eb6d5ae106c03f587ca)
+        ;
+
+        
+    
+    
+            marker_ff72dc9051dcb38354799f593784e05b.bindTooltip(
+                `<div>
+                     Nalerigu Baptist Medical Centre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_ad838dbb8ab5d9d5e9f74bd2a60ea0e5);
+        
+</script>
+</html>

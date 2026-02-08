@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_339748f9e49278392ebf79f1e60c4604 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_339748f9e49278392ebf79f1e60c4604" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_339748f9e49278392ebf79f1e60c4604 = L.map(
+                "map_339748f9e49278392ebf79f1e60c4604",
+                {
+                    center: [7.9465, -1.0232],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9724d075cb72761a25756c6071aae443 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9724d075cb72761a25756c6071aae443.addTo(map_339748f9e49278392ebf79f1e60c4604);
+        
+    
+            var marker_0264a8a156c27ba4c0d83de89500dd2e = L.marker(
+                [5.5387, -0.227],
+                {}
+            ).addTo(map_339748f9e49278392ebf79f1e60c4604);
+        
+    
+            var icon_fbaa82979cdfc062a22ae318704e4e59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0264a8a156c27ba4c0d83de89500dd2e.setIcon(icon_fbaa82979cdfc062a22ae318704e4e59);
+        
+    
+        var popup_513637994da53956f54f9b17a7b5114f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b09cb39c7dbda48c775f2766894d2fb4 = $(`<div id="html_b09cb39c7dbda48c775f2766894d2fb4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Korle Bu Teaching Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Teaching Hospital</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Greater Accra</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Good (63/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Valve Replacement</li><li>Neurosurgery</li><li>Bypass</li><li><em>...and 3 more</em></li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>ICU</li><li>Catheterization Lab</li><li>Mammography</li><li><em>...and 4 more</em></li></ul><p style='margin: 10px 0 5px 0; color: #e74c3c;'><strong>⚠️ Issues:</strong></p><ul style='margin: 0; padding-left: 20px;'><li style='color: #e74c3c;'>Claims cardiac surgery but no cardiology specialty listed</li></ul></div></div>`)[0];
+                popup_513637994da53956f54f9b17a7b5114f.setContent(html_b09cb39c7dbda48c775f2766894d2fb4);
+            
+        
+
+        marker_0264a8a156c27ba4c0d83de89500dd2e.bindPopup(popup_513637994da53956f54f9b17a7b5114f)
+        ;
+
+        
+    
+    
+            marker_0264a8a156c27ba4c0d83de89500dd2e.bindTooltip(
+                `<div>
+                     Korle Bu Teaching Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_86a223cdef42a04022e15fc85d8c5bcd = L.marker(
+                [5.5893, -0.1958],
+                {}
+            ).addTo(map_339748f9e49278392ebf79f1e60c4604);
+        
+    
+            var icon_fc6f9c5929882241de2ae53047b0b6ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hospital-o", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_86a223cdef42a04022e15fc85d8c5bcd.setIcon(icon_fc6f9c5929882241de2ae53047b0b6ca);
+        
+    
+        var popup_c8ebe26d82f449e1627acc9ba0835d1f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_788bc35a259c8b3f43a0893fa621d099 = $(`<div id="html_788bc35a259c8b3f43a0893fa621d099" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial, sans-serif; min-width: 250px;">             <h4 style="margin: 0 0 10px 0; color: #2c3e50;">Ridge Hospital</h4>             <p style="margin: 5px 0;"><strong>Type:</strong> Regional Hospital</p>             <p style="margin: 5px 0;"><strong>Region:</strong> Greater Accra</p>             <p style="margin: 5px 0;"><strong>Capability:</strong> Critical (19/100)</p>         <p style='margin: 10px 0 5px 0;'><strong>Key Procedures:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Cardiac Surgery</li></ul><p style='margin: 10px 0 5px 0;'><strong>Equipment:</strong></p><ul style='margin: 0; padding-left: 20px;'><li>Ultrasound (×2)</li><li>X-Ray</li></ul><p style='margin: 10px 0 5px 0; color: #e74c3c;'><strong>⚠️ Issues:</strong></p><ul style='margin: 0; padding-left: 20px;'><li style='color: #e74c3c;'>Claims cardiac surgery but missing: icu</li><li style='color: #e74c3c;'>Unverified claims: Ct Scanner</li></ul></div></div>`)[0];
+                popup_c8ebe26d82f449e1627acc9ba0835d1f.setContent(html_788bc35a259c8b3f43a0893fa621d099);
+            
+        
+
+        marker_86a223cdef42a04022e15fc85d8c5bcd.bindPopup(popup_c8ebe26d82f449e1627acc9ba0835d1f)
+        ;
+
+        
+    
+    
+            marker_86a223cdef42a04022e15fc85d8c5bcd.bindTooltip(
+                `<div>
+                     Ridge Hospital
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_17599e43bd1d29f169e34297a930d9b3_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9724d075cb72761a25756c6071aae443,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_17599e43bd1d29f169e34297a930d9b3 = L.control.layers(
+                layer_control_17599e43bd1d29f169e34297a930d9b3_layers.base_layers,
+                layer_control_17599e43bd1d29f169e34297a930d9b3_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_339748f9e49278392ebf79f1e60c4604);
+
+        
+    
+            L.control.fullscreen(
+                {"forceSeparateButton": false, "position": "topleft", "title": "Full Screen", "titleCancel": "Exit Full Screen"}
+            ).addTo(map_339748f9e49278392ebf79f1e60c4604);
+        
+</script>
+</html>

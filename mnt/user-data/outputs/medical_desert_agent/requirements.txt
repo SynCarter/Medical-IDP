@@ -1,0 +1,30 @@
+# Core AI and Agent Libraries
+langgraph==0.2.45
+langchain==0.3.7
+langchain-community==0.3.5
+langchain-core==0.3.15
+anthropic==0.39.0
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.2
+pydantic==2.5.3
+
+# Vector Database and RAG
+faiss-cpu==1.7.4
+sentence-transformers==2.2.2
+
+# Experiment Tracking
+mlflow==2.9.2
+
+# Visualization
+folium==0.15.1
+plotly==5.18.0
+
+# Web Interface
+streamlit==1.29.0
+streamlit-folium==0.15.1
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1

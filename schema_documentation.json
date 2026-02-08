@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "dataset_name": "Ghana Medical Facilities",
+  "description": "Comprehensive facility data for medical resource planning in Ghana",
+  "last_updated": "2025-02-08",
+  "fields": [
+    {
+      "name": "facility_id",
+      "type": "string",
+      "description": "Unique identifier for each facility",
+      "example": "FAC001",
+      "required": true
+    },
+    {
+      "name": "facility_name",
+      "type": "string",
+      "description": "Official name of the medical facility",
+      "example": "Korle Bu Teaching Hospital",
+      "required": true
+    },
+    {
+      "name": "region",
+      "type": "string",
+      "description": "Administrative region in Ghana",
+      "example": "Greater Accra",
+      "required": true,
+      "valid_values": [
+        "Greater Accra",
+        "Ashanti",
+        "Western",
+        "Central",
+        "Eastern",
+        "Volta",
+        "Northern",
+        "Upper East",
+        "Upper West",
+        "Bono",
+        "Bono East",
+        "Ahafo",
+        "Savannah",
+        "North East",
+        "Oti",
+        "Western North"
+      ]
+    },
+    {
+      "name": "district",
+      "type": "string",
+      "description": "District or municipal area",
+      "example": "Accra Metro",
+      "required": true
+    },
+    {
+      "name": "facility_type",
+      "type": "string",
+      "description": "Classification of facility",
+      "example": "Teaching Hospital",
+      "required": true,
+      "valid_values": [
+        "Teaching Hospital",
+        "Regional Hospital",
+        "District Hospital",
+        "Specialized Hospital",
+        "Mission Hospital",
+        "Polyclinic",
+        "Health Centre",
+        "CHPS Compound"
+      ]
+    },
+    {
+      "name": "latitude",
+      "type": "float",
+      "description": "Geographic latitude coordinate",
+      "example": 5.5387,
+      "required": true
+    },
+    {
+      "name": "longitude",
+      "type": "float",
+      "description": "Geographic longitude coordinate",
+      "example": -0.2270,
+      "required": true
+    },
+    {
+      "name": "procedures_free_text",
+      "type": "text",
+      "description": "Unstructured description of medical procedures performed. May include volumes, complexity levels, and informal notes.",
+      "example": "Advanced cardiac surgery including bypass and valve replacement. Neurosurgery with full ICU support.",
+      "required": false,
+      "notes": "This is a KEY field for IDP - contains critical capability information in natural language"
+    },
+    {
+      "name": "equipment_free_text",
+      "type": "text",
+      "description": "Unstructured description of medical equipment available. May include equipment status, counts, and limitations.",
+      "example": "3 Tesla MRI scanner, 128-slice CT scanner, Cardiac catheterization lab",
+      "required": false,
+      "notes": "This is a KEY field for IDP - equipment availability determines procedure capability"
+    },
+    {
+      "name": "specialties_free_text",
+      "type": "text",
+      "description": "Unstructured description of medical specialties and departments. May include staff counts and service details.",
+      "example": "Cardiothoracic surgery, Neurosurgery, Nephrology with dialysis (40 machines)",
+      "required": false,
+      "notes": "This is a KEY field for IDP - indicates staffing and departmental capabilities"
+    },
+    {
+      "name": "staff_count",
+      "type": "integer",
+      "description": "Total number of medical and support staff",
+      "example": 2800,
+      "required": false
+    },
+    {
+      "name": "bed_capacity",
+      "type": "integer",
+      "description": "Total number of hospital beds",
+      "example": 2000,
+      "required": false
+    },
+    {
+      "name": "emergency_services",
+      "type": "string",
+      "description": "Emergency service availability",
+      "example": "Yes",
+      "required": false,
+      "valid_values": ["Yes", "No", "Limited"]
+    }
+  ],
+  "data_quality_notes": [
+    {
+      "issue": "Suspicious claims",
+      "description": "Some facilities claim capabilities that don't match their equipment or staffing levels",
+      "examples": [
+        "FAC004 claims cardiac surgery but lacks proper equipment",
+        "FAC014 claims surgical capacity but has no surgeon on staff"
+      ]
+    },
+    {
+      "issue": "Equipment failures",
+      "description": "Equipment may be listed but non-functional",
+      "examples": [
+        "FAC007 MRI broken for 6 months",
+        "FAC002 X-ray frequently broken",
+        "FAC018 Ultrasound broken"
+      ]
+    },
+    {
+      "issue": "Incomplete data",
+      "description": "Free-text fields may be sparse for smaller facilities",
+      "note": "Smaller facilities tend to have less detailed documentation"
+    }
+  ],
+  "common_medical_procedures": [
+    "Cardiac surgery",
+    "Neurosurgery",
+    "Organ transplantation",
+    "Cesarean section",
+    "Appendectomy",
+    "Hernia repair",
+    "Fracture management",
+    "Laparoscopic surgery",
+    "Cataract surgery",
+    "Joint replacement"
+  ],
+  "common_equipment": [
+    "MRI scanner",
+    "CT scanner",
+    "X-ray machine",
+    "Ultrasound",
+    "Ventilator",
+    "Operating theater",
+    "ICU beds",
+    "Dialysis machine",
+    "Catheterization lab",
+    "Blood bank"
+  ],
+  "medical_specialties": [
+    "Cardiothoracic surgery",
+    "Neurosurgery",
+    "Orthopedics",
+    "Obstetrics & Gynecology",
+    "Pediatrics",
+    "Internal medicine",
+    "Emergency medicine",
+    "Nephrology",
+    "Oncology",
+    "Ophthalmology"
+  ]
+}
